@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>EJERCICIO FORMULARIO</h2>
+    <hr>
+    <br>
+    <h3>Registro de credenciales</h3>
+    <form action="/datos" method="get">
+        <label for="nombre_completo">Ingrese su nombre completo</label><br>
+        <input type="text" id="nombre_completo" name="nombre_completo" required="on">
+        <br><br>
+        <label for="correo">Ingrese su correo electronico</label><br>
+        <input type="email" id="correo" name="correo" required="on">
+        <br><br>
+        <label for="contrasena">Ingrese su contraseña</label><br>
+        <input type="password" id="contrasena" name="contrasena" required="on">
+        <br>
+        <label for="contrasena">Confirme su contraseña</label><br>
+        <input type="password" id="contrasena" name="contrasena" required="on">
+        <br><br>
+        <label for="fecha">Seleccione su fecha de nacimiento</label><br>
+        <input type="date" id="fecha" name="fecha" min="1924-05-27" max="2006-05-27">
+        <br><br>
+        <label for="genero">Seleccione su genero</label>
+        <br>
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="genero" value="Femenino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="otro" name="genero" value="Otro">
+        <label for="otro">Otro</label>
+        <br><br>
+        <label for="interes">Seleccione sus intereses</label>
+        <br>
+        <input type="checkbox" id="interes" value="Tecnología" name="interes">
+        <label for="interes">Tecnología</label>
+        <br>
+        <input type="checkbox" id="interes" value="Deporte" name="interes">
+        <label for="interes">Deportes</label>
+        <br>
+        <input type="checkbox" id="interes" value="Musica" name="interes">
+        <label for="interes">Música</label>
+        <br>
+        <input type="checkbox" id="interes" value="Viajes" name="interes">
+        <label for="interes">Viajes</label>
+        <br><br>
+        <label for="pais">Seleccione el pais de residencia</label>
+        <select name="pais" id="pais">
+            <option value="Colombia">Colombia</option>
+            <option value="Perú">Perú</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Chile">Chile</option>
+        </select>
+        <br><br>
+        <label for="bio">Biografia</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
